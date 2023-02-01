@@ -139,3 +139,153 @@
 //   else message = `The order is accepted, our manager will contact you`;
 //   return message;
 // }
+
+// function isNumberInRange(start, end, number) {
+//   const isInRange = number >= start && number <= end;
+//   return isInRange;
+// }
+
+// function checkIfCanAccessContent(subType) {
+//   const canAccessContent = subType === `pro` || subType === `vip`; // Change this line
+//   return canAccessContent;
+// }
+
+// function isNumberNotInRange(start, end, number) {
+//   const isInRange = number >= start && number <= end;
+//   const isNotInRange = !isInRange;
+//   return isNotInRange;
+// }
+
+// function getDiscount(totalSpent) {
+//   const BASE_DISCOUNT = 0;
+//   const BRONZE_DISCOUNT = 0.02;
+//   const SILVER_DISCOUNT = 0.05;
+//   const GOLD_DISCOUNT = 0.1;
+//   let discount;
+//   if (totalSpent >= 50000) {
+//     discount = GOLD_DISCOUNT;
+//   } else if (totalSpent >= 20000) {
+//     discount = SILVER_DISCOUNT;
+//   } else if (totalSpent >= 5000) {
+//     discount = BRONZE_DISCOUNT;
+//   } else {
+//     discount = BASE_DISCOUNT;
+//   }
+//   return discount;
+// }
+
+// function checkStorage(available, ordered) {
+//   let message;
+//   message =
+//     ordered > available
+//       ? 'Not enough goods in stock!'
+//       : 'The order is accepted, our manager will contact you';
+//   return message;
+// }
+
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = 'jqueryismyjam';
+//   let message;
+//   message =
+//     password === ADMIN_PASSWORD
+//       ? 'Access is allowed'
+//       : 'Access denied, wrong password!';
+//   return message;
+// }
+
+// function getSubscriptionPrice(type) {
+//   let price;
+//   switch (
+//     type
+//   ) {
+//     case 'starter':
+//       price = 0;
+//       break;
+//     case 'professional':
+//       price = 20;
+//       break;
+//     case 'organization':
+//       price = 50;
+//       break;
+//   }
+//   return price;
+// }
+
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = 'jqueryismyjam';
+//   let message;
+//   // Change code below this line
+//   switch (password) {
+//     case null:
+//       message = 'Canceled by user!';
+//       break;
+//     case ADMIN_PASSWORD:
+//       message = 'Welcome!';
+//       break;
+//     default:
+//       message = 'Access denied, wrong password!';
+//   }
+//   return message;
+// }
+
+// function getShippingCost(country) {
+//   let message;
+//   switch (country) {
+//     case 'China':
+//       message = 'Shipping to China will cost 100 credits';
+//       break;
+//     case 'Chile':
+//       message = 'Shipping to Chile will cost 250 credits';
+//       break;
+//     case 'Australia':
+//       message = 'Shipping to Australia will cost 170 credits';
+//       break;
+//     case 'Jamaica':
+//       message = 'Shipping to Jamaica will cost 120 credits';
+//       break;
+//     default:
+//       message = 'Sorry, there is no delivery to your country';
+//   }
+//   return message;
+// }
+
+// function getNameLength(name) {
+//   const message = `Name ${name} is ${name.length} characters long`;
+//   return message;
+// }
+
+// const courseTopic = 'JavaScript essentials';
+// const courseTopicLength = courseTopic.length;
+// const firstElement = courseTopic[0];
+// const lastElement = courseTopic[courseTopic.length - 1];
+
+// function getSubstring(string, length) {
+//   const substring = string.slice(0, length);
+//   return substring;
+// }
+
+// function formatMessage(message, maxLength) {
+//   let result;
+//   if (message.length <= maxLength) {
+//     return message;
+//   } else result = message.slice(0, maxLength) + `...`;
+//   return result;
+// }
+
+// function normalizeInput(input) {
+//     const normalizedInput = input.toLowerCase();
+//     return normalizedInput;
+// }
+
+// function checkForName(fullName, name) {
+//   const result = fullName.includes(name);
+//   return result;
+// }
+
+// function checkForSpam(message) {
+//   let result;
+//   if (message.toLowerCase().includes(`spam`)) result = true;
+//   else if (message.toLowerCase().includes(`sale`)) result = true;
+//   else result = false;
+//   return result;
+// }
