@@ -54,3 +54,59 @@
 // function calculateEngravingPrice(message, pricePerWord) {
 //   return message.split(' ').length * pricePerWord;
 // }
+
+// function makeStringFromArray(array, delimiter) {
+//   let string;
+//   return array.join(delimiter);
+//   return string;
+// }
+
+// function slugify(title) {
+//   return title.toLowerCase().split(` `).join(`-`);
+// }
+
+// const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+// const firstTwoEls = fruits.slice(0, 2);
+// const nonExtremeEls = fruits.slice(1, -1);
+// const lastThreeEls = fruits.slice(-3);
+
+// const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+// const newClients = ['Peach', 'Houston'];
+// const allClients = oldClients.concat(newClients);
+
+// function makeArray(firstArray, secondArray, maxLength) {
+//   let newArray = firstArray.concat(secondArray);
+//   if (newArray.length > maxLength) {
+//     return newArray.slice(0, maxLength);
+//   }
+//   return newArray;
+// }
+// ----OR----
+// function makeArray(firstArray, secondArray, maxLength) {
+//   let newArray = firstArray.concat(secondArray);
+//   newArray.length > maxLength ? newArray.slice(0, maxLength) : newArray;
+//   return newArray;
+// }
+
+// const start = 3;
+// const end = 7;
+// for (let i = start; i <= end; i += 1) {
+//   console.log(i);
+// }
+
+// !!!!!!!!!
+// function calculateTotal(number) {
+//   let sum = 0;
+//   for (i = 1; i <= number; i += 1) {
+//     sum += i;
+//   }
+//   console.log(sum);
+//   return sum;
+// }
+// calculateTotal(7);
+
+// const fruits = ['apple', 'plum', 'pear', 'orange'];
+// for (let i = 0; i < fruits.length; i += 1) {
+//   const fruit = fruits[i];
+//   console.log(fruit);
+// }
