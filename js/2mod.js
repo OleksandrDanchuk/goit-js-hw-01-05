@@ -110,3 +110,115 @@
 //   const fruit = fruits[i];
 //   console.log(fruit);
 // }
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   for (let i = 0; i < order.length; i += 1) {
+//     total += order[i];
+//   }
+//   return total;
+// }
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+// console.log(calculateTotalPrice([164, 48, 291]));
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+
+// ЗАДАЧА: ПОШУК НАЙДОВШОГО СЛОВА
+// function findLongestWord(string) {
+//   const newArray = string.split(' ');
+//   let longestWord = '';
+//   for (const word of newArray) {
+//     if (word.length > longestWord.length) {
+//       longestWord = word;
+//     }
+//   }
+//   return longestWord;
+// }
+
+// Доповни код функції таким чином, щоб вона повертала масив усіх цілих чисел від значення min до max
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   // Change code below this line
+//   for (let i = min; i < max; i += 1) {
+//     numbers.push[i];
+//   }
+//   // Change code above this line
+//   return numbers;
+// }
+
+// Напиши функцію filterArray(numbers, value), яка приймає масив чисел(параметр numbers) і повертає но
+// вий масив, в якому будуть тільки ті елементи масиву numbers, які більші за значення параметра value
+// function filterArray(numbers, value) {
+//   let bigNumbers = [];
+//   for (number of numbers) {
+//     if (number > value) {
+//       bigNumbers.push(number);
+//     }
+//   }
+//   return bigNumbers;
+// }
+
+// Функція checkFruit(fruit) приймає рядок з назвою фрукта (параметр fruit), і перевіряє, чи присутній такий фрукт в масиві fruits.
+// function checkFruit(fruit) {
+//   const fruits = ['apple', 'plum', 'pear', 'orange'];
+//   return fruits.includes(fruit);
+// }
+
+// Напиши функцію, яка отримує два масиви довільної довжини, і повертає новий масив,
+// що складається з тих елементів, які присутні в обох вихідних масивах.
+// function getCommonElements(array1, array2) {
+//   let newArray = [];
+//   for (const string of array1) {
+//     if (array1.includes(string) && array2.includes(string)) {
+//       newArray.push(string);
+//     }
+//   }
+//   return newArray;
+// }
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   for (const sum of order) {
+//     total += sum;
+//   }
+//   return total;
+// }
+
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+//   for (let number of numbers) {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+//   return filteredNumbers;
+// }
+
+// операція за модулем (%) повертає цілочисельну остачу від ділення двох чисел - діленого і дільника.
+// const a = 3 % 3;
+// const b = 4 % 3;
+// const c = 11 % 4;
+// const d = 12 % 7;
+// const e = 8 % 3;
+
+// Напиши функцію, яка повертає масив усіх парних чисел від start до end.
+// Парним вважається число, яке ділиться на 2 без остачі(10 % 2 === 0).
+// function getEvenNumbers(start, end) {
+//   const newArray = [];
+//   for (let i = start; i <= end; i += 1) {
+//     if (i % 2 === 0) {
+//       newArray.push(i);
+//     }
+//   }
+//   return newArray;
+// }
+
+// Напиши функцію, яка перевіряє, чи присутнє в масиві array значення value,
+// повертаючи true, якщо присутнє, і false в іншому випадку.
+// function includes(array, value) {
+//   for (const item of array) {
+//     if (item === value) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
