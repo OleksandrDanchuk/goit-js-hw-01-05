@@ -5,6 +5,7 @@
 //   price: 2153,
 //   tags: ['premium', 'promoted', 'top'],
 // };
+// console.log(apartment);
 
 // const apartment = {
 //   imgUrl: 'https://via.placeholder.com/640x480',
@@ -164,3 +165,77 @@
 // for (const key of keys) {
 //   values.push(apartment[key]);
 // }
+
+// function countProps(object) {
+//   let propCount = 0;
+//   const keys = Object.keys(object);
+//   for (const key of keys) {
+//     propCount += 1;
+//   }
+//   return propCount;
+// }
+
+// const apartment = {
+//   descr: 'Spacious apartment in the city center',
+//   rating: 4,
+//   price: 2153,
+// };
+// const keys = Object.keys(apartment);
+// const values = Object.values(apartment);
+
+// function countTotalSalary(salaries) {
+//   let totalSalary = 0;
+//   const values = Object.values(salaries);
+//   for (let value of values) {
+//     totalSalary += value;
+//   }
+//   return totalSalary;
+// }
+// countTotalSalary({ mango: 100, poly: 150, alfred: 80 });
+
+// const colors = [
+//   { hex: '#f44336', rgb: '244,67,54' },
+//   { hex: '#2196f3', rgb: '33,150,243' },
+//   { hex: '#4caf50', rgb: '76,175,80' },
+//   { hex: '#ffeb3b', rgb: '255,235,59' },
+// ];
+// const hexColors = [];
+// const rgbColors = [];
+// for (const color of colors) {
+//   hexColors.push(color.hex);
+//   rgbColors.push(color.rgb);
+// }
+// console.log(hexColors);
+
+// const products = [
+//   { name: 'Radar', price: 1300, quantity: 4 },
+//   { name: 'Scanner', price: 2700, quantity: 3 },
+//   { name: 'Droid', price: 400, quantity: 7 },
+//   { name: 'Grip', price: 1200, quantity: 9 },
+// ];
+// function getProductPrice(productName) {
+//   let price = null;
+//   for (const product of products) {
+//     if (product.name === productName) {
+//       price = product.price;
+//       break;
+//     }
+//   }
+//   return price;
+// }
+// getProductPrice('Radar');
+
+const products = [
+  { name: 'Radar', price: 1300, quantity: 4 },
+  { name: 'Scanner', price: 2700, quantity: 3 },
+  { name: 'Droid', price: 400, quantity: 7 },
+  { name: 'Grip', price: 1200, quantity: 9 },
+];
+function getAllPropValues(propName) {
+  // Change code below this line
+  let allValues = [];
+  for (let product of products) {
+  }
+
+  // Change code above this line
+}

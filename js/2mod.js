@@ -94,10 +94,9 @@
 //   console.log(i);
 // }
 
-// !!!!!!!!!
 // function calculateTotal(number) {
 //   let sum = 0;
-//   for (i = 1; i <= number; i += 1) {
+//   for (let i = 1; i <= number; i += 1) {
 //     sum += i;
 //   }
 //   console.log(sum);
