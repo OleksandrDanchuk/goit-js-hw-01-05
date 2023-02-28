@@ -225,17 +225,58 @@
 // }
 // getProductPrice('Radar');
 
-const products = [
-  { name: 'Radar', price: 1300, quantity: 4 },
-  { name: 'Scanner', price: 2700, quantity: 3 },
-  { name: 'Droid', price: 400, quantity: 7 },
-  { name: 'Grip', price: 1200, quantity: 9 },
-];
-function getAllPropValues(propName) {
-  // Change code below this line
-  let allValues = [];
-  for (let product of products) {
-  }
+// const products = [
+//   { name: 'Radar', price: 1300, quantity: 4 },
+//   { name: 'Scanner', price: 2700, quantity: 3 },
+//   { name: 'Droid', price: 400, quantity: 7 },
+//   { name: 'Grip', price: 1200, quantity: 9 },
+// ];
+// function getAllPropValues(propName) {
+//   let allValues = [];
+//   for (let product of products) {
+//     const keys = Object.keys(product);
+//     if (keys.includes(propName)) {
+//       allValues.push(product[propName]);
+//     }
+//   }
+//   return allValues;
+// }
+// getAllPropValues('quantity');
 
-  // Change code above this line
-}
+// const products = [
+//   { name: 'Radar', price: 1300, quantity: 4 },
+//   { name: 'Scanner', price: 2700, quantity: 3 },
+//   { name: 'Droid', price: 400, quantity: 7 },
+//   { name: 'Grip', price: 1200, quantity: 9 },
+// ];
+// function calculateTotalPrice(productName) {
+//   let totalPrice = 0;
+//   for (const product of products) {
+//     if (productName === product.name) {
+//       totalPrice = product.price * product.quantity;
+//     }
+//   }
+//   return totalPrice;
+// }
+
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// const { yesterday, today, tomorrow } = highTemperatures;
+// const meanTemperature = (yesterday + today + tomorrow) / 3;
+// console.log(meanTemperature);
+
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Change code below this line
+// const yesterday = highTemperatures.yesterday;
+// const today = highTemperatures.today;
+// const tomorrow = highTemperatures.tomorrow;
+// const icon = highTemperatures.icon;
+// // Change code above this line
+// const meanTemperature = (yesterday + today + tomorrow) / 3;
