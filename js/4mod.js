@@ -283,3 +283,89 @@
 //   const newUser = users.find(user => user.email === email);
 //   return newUser;
 // };
+
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// const eachElementInFirstIsEven = firstArray.every(elem => elem % 2 === 0);
+// const eachElementInFirstIsOdd = firstArray.every(elem => elem % 2 !== 0);
+// const eachElementInSecondIsEven = secondArray.every(elem => elem % 2 === 0);
+// const eachElementInSecondIsOdd = secondArray.every(elem => elem % 2 !== 0);
+// const eachElementInThirdIsEven = thirdArray.every(elem => elem % 2 === 0);
+// const eachElementInThirdIsOdd = thirdArray.every(elem => elem % 2 !== 0);
+
+// const isEveryUserActive = users => {
+//   const activeUser = users.every(user => user.isActive === true);
+//   return activeUser;
+// };
+
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// const anyElementInFirstIsEven = firstArray.some(elem => elem % 2 === 0);
+// const anyElementInFirstIsOdd = firstArray.some(elem => elem % 2 !== 0);
+// const anyElementInSecondIsEven = secondArray.some(elem => elem % 2 === 0);
+// const anyElementInSecondIsOdd = secondArray.some(elem => elem % 2 !== 0);
+// const anyElementInThirdIsEven = thirdArray.some(elem => elem % 2 === 0);
+// const anyElementInThirdIsOdd = thirdArray.some(elem => elem % 2 !== 0);
+
+// const isAnyUserActive = users => {
+//   const activeUser = users.some(user => user.isActive);
+//   return activeUser;
+// };
+
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244,
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// const totalPlayTime = playtimes.reduce((callback, playtimes) => {
+//   return callback + playtimes;
+// });
+// const averagePlayTime = totalPlayTime / playtimes.length;
+
+// const players = [
+//   { name: 'Mango', playtime: 1270, gamesPlayed: 4 },
+//   { name: 'Poly', playtime: 469, gamesPlayed: 2 },
+//   { name: 'Ajax', playtime: 690, gamesPlayed: 3 },
+//   { name: 'Kiwi', playtime: 241, gamesPlayed: 1 },
+// ];
+// const totalAveragePlaytimePerGame = players.reduce((total, player) => {
+//   return total + player.playtime / player.gamesPlayed;
+// }, 0);
+
+// const calculateTotalBalance = users =>
+//   users.reduce((total, user) => {
+//     return total + user.balance;
+//   }, 0);
+
+// const getTotalFriendCount = users =>
+//   users.reduce((total, user) => {
+//     return total + user.friends.length;
+//   }, 0);
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   'Tanith Lee',
+//   'Bernard Cornwell',
+//   'Robert Sheckley',
+//   'Fyodor Dostoevsky',
+// ];
+// const ascendingReleaseDates = [...releaseDates].sort();
+// const alphabeticalAuthors = [...authors].sort();
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const ascendingReleaseDates = [...releaseDates].sort((a, b) => a - b);
+// const descendingReleaseDates = [...releaseDates].sort((a, b) => b - a);
+
+// const authors = [
+//   'Tanith Lee',
+//   'Bernard Cornwell',
+//   'Robert Sheckley',
+//   'Fyodor Dostoevsky',
+//   'Howard Lovecraft',
+// ];
+// const authorsInAlphabetOrder = [...authors].sort((a, b) => a.localeCompare(b));
+// const authorsInReversedOrder = [...authors].sort((a, b) => b.localeCompare(a));
