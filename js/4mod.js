@@ -201,3 +201,85 @@
 // const uniqueGenres = allGenres.filter(
 //   (genres, index, array) => array.indexOf(genres) === index
 // );
+
+// const books = [
+//   {
+//     title: 'The Last Kingdom',
+//     author: 'Bernard Cornwell',
+//     rating: 8.38,
+//   },
+//   {
+//     title: 'Beside Still Waters',
+//     author: 'Robert Sheckley',
+//     rating: 8.51,
+//   },
+//   {
+//     title: 'The Dream of a Ridiculous Man',
+//     author: 'Fyodor Dostoevsky',
+//     rating: 7.75,
+//   },
+//   { title: 'Redder Than Blood', author: 'Tanith Lee', rating: 7.94 },
+//   { title: 'Enemy of God', author: 'Bernard Cornwell', rating: 8.67 },
+// ];
+// const MIN_RATING = 8;
+// const AUTHOR = 'Bernard Cornwell';
+// const topRatedBooks = books.filter(book => book.rating >= MIN_RATING);
+// const booksByAuthor = books.filter(book => book.author === AUTHOR);
+
+// const getUsersWithEyeColor = (users, color) => {
+//  return users.filter(user => user.eyeColor === color);
+// };
+
+// const getUsersWithAge = (users, minAge, maxAge) => {
+//   return users.filter(user => user.age >= minAge && user.age < maxAge);
+// };
+
+// const getUsersWithFriend = (users, friendName) => {
+//   return users.filter(user => user.friends.includes(friendName));
+// };
+
+// const getFriends = users => {
+//    const allFriends = users.flatMap(user => user.friends);
+//    const newFriends = allFriends.filter(
+//      (friend, index, array) => array.indexOf(friend) === index
+//    );
+//    return newFriends;
+// };
+
+// const getActiveUsers = users => {
+//   const activeUsers = users.filter(user => user.isActive);
+//   return activeUsers;
+// };
+
+// const getInactiveUsers = users => {
+//   const inactiveUsers = users.filter(user => user.isActive === false);
+//   return inactiveUsers;
+// };
+
+// const books = [
+//   {
+//     title: 'The Last Kingdom',
+//     author: 'Bernard Cornwell',
+//     rating: 8.38,
+//   },
+//   {
+//     title: 'Beside Still Waters',
+//     author: 'Robert Sheckley',
+//     rating: 8.51,
+//   },
+//   {
+//     title: 'The Dream of a Ridiculous Man',
+//     author: 'Fyodor Dostoevsky',
+//     rating: 7.75,
+//   },
+//   { title: 'Redder Than Blood', author: 'Tanith Lee', rating: 7.94 },
+// ];
+// const BOOK_TITLE = 'The Dream of a Ridiculous Man';
+// const AUTHOR = 'Robert Sheckley';
+// const bookWithTitle = books.find(book => (book.title === BOOK_TITLE));
+// const bookByAuthor = books.find(book => book.author === AUTHOR);
+
+// const getUserWithEmail = (users, email) => {
+//   const newUser = users.find(user => user.email === email);
+//   return newUser;
+// };
