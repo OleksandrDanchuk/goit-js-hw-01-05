@@ -192,3 +192,187 @@
 // console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
 // storage.removeItem('Prolonger');
 // console.log(storage.getItems()); // ["Нанитоиды", "Антигравитатор", "Droid"]
+
+// class StringBuilder {
+//   #value;
+//   constructor(initialValue) {
+//     this.#value = initialValue;
+//   }
+
+//   getValue() {
+//     return this.#value;
+//   }
+
+//   padEnd(str) {
+//     this.#value += str;
+//   }
+
+//   padStart(str) {
+//     this.#value = str + this.#value;
+//   }
+
+//   padBoth(str) {
+//     this.padStart(str);
+//     this.padEnd(str);
+//   }
+// }
+// const builder = new StringBuilder('.');
+// console.log(builder.getValue()); // "."
+// builder.padStart('^');
+// console.log(builder.getValue()); // "^."
+// builder.padEnd('^');
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth('=');
+// console.log(builder.getValue()); // "=^.^="
+
+// class Car {
+//   #brand;
+//   #model;
+//   #price;
+//   constructor({ brand, model, price }) {
+//     this.#brand = brand;
+//     this.#model = model;
+//     this.#price = price;
+//   }
+//   get brand() {
+//     return this.#brand;
+//   }
+//   set brand(newBrand) {
+//     this.#brand = newBrand;
+//   }
+//   get model() {
+//     return this.#model;
+//   }
+//   set model(newModel) {
+//     this.#model = newModel;
+//   }
+//   get price() {
+//     return this.#price;
+//   }
+//   set price(newPrice) {
+//     this.#price = newPrice;
+//   }
+// }
+
+// class Car {
+//   static MAX_PRICE = 50000;
+//   #price;
+//   constructor({ price }) {
+//     this.#price = price;
+//   }
+//   get price() {
+//     return this.#price;
+//   }
+//   set price(newPrice) {
+//     if (newPrice <= Car.MAX_PRICE) {
+//       this.#price = newPrice;
+//     }
+//   }
+// }
+// const audi = new Car({ price: 35000 });
+// console.log(audi.price); // 35000
+// audi.price = 49000;
+// console.log(audi.price); // 49000
+// audi.price = 51000;
+// console.log(audi.price); // 49000
+
+// class Car {
+//   static #MAX_PRICE = 50000;
+//   static checkPrice(price) {
+//     if (price > Car.#MAX_PRICE) {
+//       return 'Error! Price exceeds the maximum';
+//     }
+//     return 'Success! Price is within acceptable limits';
+//   }
+//   constructor({ price }) {
+//     this.price = price;
+//   }
+// }
+// const audi = new Car({ price: 36000 });
+// const bmw = new Car({ price: 64000 });
+// console.log(Car.checkPrice(audi.price)); // "Success! Price is within acceptable limits"
+// console.log(Car.checkPrice(bmw.price)); // "Error! Price exceeds the maximum"
+
+// class User {
+//   constructor(email) {
+//     this.email = email;
+//   }
+//   get email() {
+//     return this.email;
+//   }
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+// class Admin extends User {
+//   static AccessLevel = { BASIC: 'basic', SUPERUSER: 'superuser' };
+// }
+
+// class User {
+//   email;
+//   constructor(email) {
+//     this.email = email;
+//   }
+//   get email() {
+//     return this.email;
+//   }
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+// class Admin extends User {
+//   constructor({ email, accessLevel }) {
+//     super(email);
+//     this.accessLevel = accessLevel;
+//   }
+//   static AccessLevel = {
+//     BASIC: 'basic',
+//     SUPERUSER: 'superuser',
+//   };
+// }
+// const mango = new Admin({
+//   email: 'mango@mail.com',
+//   accessLevel: Admin.AccessLevel.SUPERUSER,
+// });
+// console.log(mango.email); // "mango@mail.com"
+// console.log(mango.accessLevel); // "superuser"
+
+// class User {
+//   email;
+//   constructor(email) {
+//     this.email = email;
+//   }
+//   get email() {
+//     return this.email;
+//   }
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+// class Admin extends User {
+//   static AccessLevel = {
+//     BASIC: 'basic',
+//     SUPERUSER: 'superuser',
+//   };
+//   blacklistedEmails = [];
+//   constructor({ email, accessLevel }) {
+//     super(email);
+//     this.accessLevel = accessLevel;
+//   }
+//   blacklist(email) {
+//     this.blacklistedEmails.push(email);
+//   }
+//   isBlacklisted(email) {
+//     return this.blacklistedEmails.includes(email);
+//   }
+// }
+// const mango = new Admin({
+//   email: 'mango@mail.com',
+//   accessLevel: Admin.AccessLevel.SUPERUSER,
+// });
+// console.log(mango.email); // "mango@mail.com"
+// console.log(mango.accessLevel); // "superuser"
+// mango.blacklist('poly@mail.com');
+// console.log(mango.blacklistedEmails); // ["poly@mail.com"]
+// console.log(mango.isBlacklisted('mango@mail.com')); // false
+// console.log(mango.isBlacklisted('poly@mail.com')); // true
